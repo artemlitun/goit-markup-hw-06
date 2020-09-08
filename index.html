@@ -69,6 +69,96 @@
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="hero__modal">
+              <form class="modal__form">
+                <b class="modal__form-title"
+                  >Оставьте свои данные, мы вам перезвоним</b
+                >
+                <div class="modal__form-field">
+                  <label for="name" class="modal__form-field-label">Имя</label>
+                  <input
+                    class="modal__form-field-input"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder=" "
+                  />
+                  <svg class="modal__form-field-svg">
+                    <use
+                      href="./images/web-studio/icons/sprite.svg#icon-letter-black"
+                    ></use>
+                  </svg>
+                  <!-- рещить проблему со спрайтом -->
+                </div>
+                <div class="modal__form-field">
+                  <label for="tel" class="modal__form-field-label">
+                    Телефон</label
+                  >
+                  <input
+                    class="modal__form-field-input"
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    placeholder=" "
+                  />
+                  <svg class="modal__form-field-svg">
+                    <use
+                      href="./images/web-studio/icons/sprite.svg#icon-men"
+                    ></use>
+                  </svg>
+                </div>
+
+                <div class="modal__form-field">
+                  <label for="mail" class="modal__form-field-label"
+                    >Почта</label
+                  >
+                  <input
+                    class="modal__form-field-input"
+                    type="email"
+                    name="mail"
+                    id="mail"
+                    placeholder=" "
+                  />
+                  <svg class="modal__form-field-svg">
+                    <use
+                      href="./images/web-studio/icons/sprite.svg#icon-trubka"
+                    ></use>
+                  </svg>
+                </div>
+
+                <div class="modal__form-field">
+                  <label for="comment" class="modal__form-field-label"
+                    >Коментарий</label
+                  >
+                  <textarea
+                    class="modal__form-field-textarea"
+                    name="comment"
+                    id="comment"
+                    rows="10"
+                    placeholder="Введите текст"
+                  >
+                  </textarea>
+                </div>
+
+                <div class="modal__form-policy">
+                  <label class="modal__form-policy-field">
+                    <input
+                      class="modal__form-policy-checkbox"
+                      type="checkbox"
+                      name="policy"
+                    />
+                    <span class="modal__form-policy-svg"></span>
+                    <span class="modal__form-policy-label"
+                      >Соглашаюсь с рассылкой и принимаю
+                      <a href="#">Условия договора</a></span
+                    >
+                  </label>
+                </div>
+
+                <button type="submit" class="modal__form-policy-button button">
+                  Отправить
+                </button>
+              </form>
+
               <button
                 class="hero__modal-closed-btn"
                 type="button"
