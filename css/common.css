@@ -252,6 +252,14 @@ img {
   color: var(--primary-bg-color);
 }
 
+.footer__subtitle {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--primary-bg-color);
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
 /* footer__address */
 
 .footer__address {
@@ -261,8 +269,12 @@ img {
 .footer__address-street {
   color: var(--primary-bg-color);
   font-style: normal;
+  font-size: 14px;
+
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
+
 .footer__address-link {
   color: rgba(255, 255, 255, 0.6);
   line-height: 1.71;
@@ -294,20 +306,54 @@ img {
   fill: var(--primary-bg-color);
 }
 
-.footer__social-subtitle {
-  margin-top: 0;
-  margin-bottom: 0;
-  color: var(--primary-bg-color);
-  font-weight: 700;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
 /* footer__form */
 
-.footer-subscribe .button::after {
+/* .footer__form-button::after {
   content: "";
   width: 24px;
   height: 24px;
   margin-left: 10px;
   background-image: url(../images/web-studio/contacts-icons/samoletik-icon.svg);
+} */
+
+.footer__form {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer__form-input {
+  width: 358px;
+  height: 50px;
+
+  background: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.footer__form-input::placeholder {
+  padding-left: 16px;
+}
+
+.footer__form-svg {
+  width: 24px;
+  height: 24px;
+  padding-left: 10px;
+  fill: var(--primary-bg-color);
+}
+
+.footer__form-button {
+  margin: 0;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.footer__form-input:hover,
+.footer__form-input:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.input::placeholder:hover,
+.input::placeholder:focus {
+  color: var(--accent-color);
 }

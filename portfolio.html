@@ -323,7 +323,7 @@
         </div>
 
         <div class="footer__social">
-          <p class="footer__social-subtitle">Присоединяйтесь</p>
+          <p class="footer__subtitle">Присоединяйтесь</p>
           <ul class="social list">
             <li class="social__item">
               <a
@@ -383,10 +383,27 @@
           </ul>
         </div>
 
-        <div class="footer__form">
-          <form action=""></form>
-          <!-- <p class="footer-subtitle">Подпишитесь на рассылку</p>
-          <a href="#" class="button link">Подписаться</a> -->
+        <div class="footer__subscribe">
+          <b class="footer__subtitle">Подпишитесь на рассылку</b>
+
+          <form class="footer__form">
+            <input
+              class="footer__form-input"
+              type="email"
+              name="footer-mail"
+              id="footer-mail"
+              placeholder="E-mail"
+            />
+            <label for="footer-mail" class="footer__form-label"></label>
+            <button type="submit" class="footer__form-button button">
+              Подписаться
+              <svg class="footer__form-svg">
+                <use
+                  href="./images/web-studio/icons/sprite.svg#icon-samoletik-icon"
+                ></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>

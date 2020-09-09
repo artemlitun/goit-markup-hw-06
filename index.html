@@ -64,97 +64,95 @@
           <h1 class="hero__content-title">
             Эффективные решения <br />для вашего бизнеса
           </h1>
-          <button class="button hero__content-button" data-modal-open>
+          <button class="hero__content-button button" data-modal-open>
             Заказать услугу
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="hero__modal">
-              <form class="modal__form">
-                <b class="modal__form-title"
+              <form class="form">
+                <b class="form__title"
                   >Оставьте свои данные, мы вам перезвоним</b
                 >
-                <div class="modal__form-field">
-                  <label for="name" class="modal__form-field-label">Имя</label>
-                  <input
-                    class="modal__form-field-input"
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder=" "
-                  />
-                  <svg class="modal__form-field-svg">
-                    <use
-                      href="./images/web-studio/icons/sprite.svg#icon-letter-black"
-                    ></use>
-                  </svg>
-                  <!-- рещить проблему со спрайтом -->
-                </div>
-                <div class="modal__form-field">
-                  <label for="tel" class="modal__form-field-label">
-                    Телефон</label
-                  >
-                  <input
-                    class="modal__form-field-input"
-                    type="tel"
-                    name="tel"
-                    id="tel"
-                    placeholder=" "
-                  />
-                  <svg class="modal__form-field-svg">
-                    <use
-                      href="./images/web-studio/icons/sprite.svg#icon-men"
-                    ></use>
-                  </svg>
-                </div>
-
-                <div class="modal__form-field">
-                  <label for="mail" class="modal__form-field-label"
-                    >Почта</label
-                  >
-                  <input
-                    class="modal__form-field-input"
-                    type="email"
-                    name="mail"
-                    id="mail"
-                    placeholder=" "
-                  />
-                  <svg class="modal__form-field-svg">
-                    <use
-                      href="./images/web-studio/icons/sprite.svg#icon-trubka"
-                    ></use>
-                  </svg>
-                </div>
-
-                <div class="modal__form-field">
-                  <label for="comment" class="modal__form-field-label"
-                    >Коментарий</label
-                  >
-                  <textarea
-                    class="modal__form-field-textarea"
-                    name="comment"
-                    id="comment"
-                    rows="10"
-                    placeholder="Введите текст"
-                  >
-                  </textarea>
-                </div>
-
-                <div class="modal__form-policy">
-                  <label class="modal__form-policy-field">
+                <div class="role-group">
+                  <div class="form__field">
                     <input
-                      class="modal__form-policy-checkbox"
-                      type="checkbox"
-                      name="policy"
+                      class="form__field-input"
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder=" "
                     />
-                    <span class="modal__form-policy-svg"></span>
-                    <span class="modal__form-policy-label"
+                    <label for="name" class="form__field-label">Имя</label>
+                    <svg class="form__field-svg" width="12" height="12">
+                      <use
+                        href="./images/web-studio/icons/sprite.svg#icon-letter-black"
+                      ></use>
+                    </svg>
+                  </div>
+
+                  <div class="form__field">
+                    <input
+                      class="form__field-input"
+                      type="tel"
+                      name="tel"
+                      id="tel"
+                      placeholder=" "
+                    />
+                    <label for="tel" class="form__field-label"> Телефон</label>
+                    <svg class="form__field-svg" width="13" height="13">
+                      <use
+                        href="./images/web-studio/icons/sprite.svg#icon-men"
+                      ></use>
+                    </svg>
+                  </div>
+
+                  <div class="form__field">
+                    <input
+                      class="form__field-input"
+                      type="email"
+                      name="mail"
+                      id="mail"
+                      placeholder=" "
+                    />
+                    <label for="mail" class="form__field-label">Почта</label>
+                    <svg class="form__field-svg" width="15" height="12">
+                      <use
+                        href="./images/web-studio/icons/sprite.svg#icon-trubka"
+                      ></use>
+                    </svg>
+                  </div>
+
+                  <div class="form__field">
+                    <textarea
+                      rows="6"
+                      class="form__field-textarea"
+                      name="comment"
+                      id="comment"
+                      placeholder=" "
+                    >
+                    </textarea>
+                    <label for="comment" class="form__field-comment"
+                      >Коментарий</label
+                    >
+                  </div>
+                </div>
+
+                <div class="form__field">
+                  <input
+                    class="form__field-policy-checkbox visually-hidden"
+                    type="checkbox"
+                    name="policy"
+                    id="policy"
+                  />
+                  <label for="policy" class="form__field-policy-label">
+                    <span class="form__field-policy-text"
                       >Соглашаюсь с рассылкой и принимаю
                       <a href="#">Условия договора</a></span
                     >
                   </label>
                 </div>
 
-                <button type="submit" class="modal__form-policy-button button">
+                <button type="submit" class="form__field-policy-button button">
                   Отправить
                 </button>
               </form>
@@ -164,7 +162,7 @@
                 type="button"
                 data-modal-close
               >
-                <svg class="closed-btn-svg">
+                <svg class="hero__modal-closed-btn-svg">
                   <use
                     href="./images/web-studio/icons/sprite.svg#icon-close-nav-btn"
                   ></use>
@@ -672,7 +670,7 @@
         </div>
 
         <div class="footer__social">
-          <p class="footer__social-subtitle">Присоединяйтесь</p>
+          <p class="footer__subtitle">Присоединяйтесь</p>
           <ul class="social list">
             <li class="social__item">
               <a
@@ -732,10 +730,27 @@
           </ul>
         </div>
 
-        <div class="footer__form">
-          <form action=""></form>
-          <!-- <p class="footer-subtitle">Подпишитесь на рассылку</p>
-          <a href="#" class="button link">Подписаться</a> -->
+        <div class="footer__subscribe">
+          <b class="footer__subtitle">Подпишитесь на рассылку</b>
+
+          <form class="footer__form">
+            <input
+              class="footer__form-input"
+              type="email"
+              name="footer-mail"
+              id="footer-mail"
+              placeholder="E-mail"
+            />
+            <label for="footer-mail" class="footer__form-label"></label>
+            <button type="submit" class="footer__form-button button">
+              Подписаться
+              <svg class="footer__form-svg">
+                <use
+                  href="./images/web-studio/icons/sprite.svg#icon-samoletik-icon"
+                ></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
