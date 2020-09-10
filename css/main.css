@@ -220,7 +220,7 @@
 
 /* policy */
 .form__field-policy-label {
-  display: flex;
+  display: inline-flex;
   /* text-align: center; */
   align-items: center;
 
