@@ -221,7 +221,6 @@
 /* policy */
 .form__field-policy-label {
   display: inline-flex;
-  /* text-align: center; */
   align-items: center;
 
   font-weight: normal;
