@@ -104,7 +104,7 @@ img {
   letter-spacing: 0.03em;
 }
 
-.logo-accent {
+.logo__accent {
   color: var(--accent-color);
 }
 
@@ -265,6 +265,10 @@ img {
 .footer__address {
   padding-top: 20px;
 }
+/* Узнать у ментора */
+address {
+  font-style: normal;
+}
 
 .footer__address-street {
   color: var(--primary-bg-color);
@@ -308,14 +312,6 @@ img {
 
 /* footer__form */
 
-/* .footer__form-button::after {
-  content: "";
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  background-image: url(../images/web-studio/contacts-icons/samoletik-icon.svg);
-} */
-
 .footer__form {
   display: flex;
   margin-top: 20px;
@@ -333,6 +329,7 @@ img {
 
 .footer__form-input::placeholder {
   padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer__form-svg {
